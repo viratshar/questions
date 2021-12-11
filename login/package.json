@@ -1,0 +1,25 @@
+{
+  "name": "login-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.mjs",
+  "scripts": {
+    "syntax-check": "shopt -s globstar; for f in **/*.mjs; do node -c $f; done;",
+    "start": "parcel src/html/index.html  --port 1239",
+    "dev-build": "parcel build src/html/index.html -d dev-dist --public-url './' ",
+    "prod-build": "parcel build src/html/index.html -d prod-dist --no-source-maps --public-url './' ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  },
+  "browserslist": [
+    "since 2020-12"
+  ],
+  "dependencies": {
+    "cs544-js-utils": "file:../../../../lib/cs544-js-utils"
+  }
+}
