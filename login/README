@@ -1,0 +1,4 @@
+Should add a keyup within password widget to warn of caps-lock.
+
+The didAppLogin flag is clumsy, could probably be removed by setting up
+app and app html only after login and not after each checkLogin.
